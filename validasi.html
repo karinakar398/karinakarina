@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validasi</title>
+</head>
+<script type="text/javascript">
+	function validasi() {
+		var nama = document.getElementById('form').karina.value;
+		if (nama!="karina"){
+			alert('Nama yang diinput salah! Silahkan masukkan kembali!');
+		}
+		else{
+			window.location="index.html";
+		}
+	}
+</script>
+<style type="text/css">
+	input[type=text]{
+		width: 20%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	button{
+		width: 20%;
+		background-color: #4CAF50;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border-radius: 4px;
+		border: none;
+		cursor: pointer;
+	}
+	div{
+		border-radius: 5px;
+		background-color: #f2f2f2;
+		padding:  20px;
+	}
+
+	</style>
+
+<body>
+	<form id="form" onsubmit="validasi()">
+		<div>
+			
+				<label> Nama </label> <br>
+				<input  id="karina" type="text" placeholder="Masukkan nama"><br>
+				<button  type="button" onclick="validasi();"> Login </button>	
+		</div>
+	</form>
+</body>
+</html>
